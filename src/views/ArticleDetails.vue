@@ -32,7 +32,7 @@ export default class ArticleDetails extends Vue {
   padding: 16px 50px;
   width: 1100px;
   margin: 0 auto;
-  background-color: #ffd;
+  background-color:	#FFFFF0;
 }
 .article-title {
   font-size: 24px;

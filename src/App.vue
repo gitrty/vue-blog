@@ -107,6 +107,7 @@ a {
   padding: 10px 15px 0;
 }
 .layout-content {
+  padding-top: 16px;
   min-height: 200px;
   margin: 15px;
   overflow: hidden;
