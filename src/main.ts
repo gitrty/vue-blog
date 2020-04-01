@@ -9,12 +9,14 @@ import '@/plugin/iview'
 // 清楚样式css
 import '@/assets/css/base.css'
 
-// 过滤器
-import '@/filter'
+import filter from '@/filter'
+import common from './common'
+Vue.use(filter)
+  .use(common)
 
 Vue.config.productionTip = false
 
-new Vue({
+export const vue = new Vue({
   router,
   store,
   render: h => h(App)

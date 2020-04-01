@@ -31,8 +31,8 @@
       <Card>
         <p slot="title">卡片标题</p>
         <p>
-          无边框内容填充无边框内容填充
-          无边框内容填充无边框内容填充无
+          {{'无边框内容填充无边框内容填充\
+          无边框内容填充无边框内容填充无' | ellipsis(20)}}
         </p>
       </Card>
     </div>
@@ -58,7 +58,8 @@ export default class Home extends Vue {
 
   // 跳转文章详情页
   private navToDetails(item: any) {
-    this.$router.push({ path: "/articledetails", query: { articleId: item } });
+    // 指定this的类型为any，解决报错
+    (this as any).$path("/articledetails", { articleId: item });
   }
 }
 </script>
@@ -88,7 +89,7 @@ export default class Home extends Vue {
     font-size: 18px;
     > span {
       cursor: pointer;
-      transition: color .3s;
+      transition: color 0.3s;
       &:hover {
         color: #2780dd;
       }
@@ -99,5 +100,8 @@ export default class Home extends Vue {
     font-size: 14px;
     color: #666;
   }
+}
+.layout-content {
+  min-height: 770px !important;
 }
 </style>

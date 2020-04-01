@@ -17,6 +17,7 @@ import { Vue, Component } from "vue-property-decorator";
 export default class ArticleDetails extends Vue {
   // 文章id
   private articleId: any = -1;
+
   // 文章内容
   private content: string = "<h1>内容内容11</h1><p>内容内容2222</p>";
 
@@ -32,7 +33,7 @@ export default class ArticleDetails extends Vue {
   padding: 16px 50px;
   width: 1100px;
   margin: 0 auto;
-  background-color:	#FFFFF0;
+  background-color: #fffff0;
 }
 .article-title {
   font-size: 24px;

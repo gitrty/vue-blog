@@ -49,9 +49,16 @@
 </template>
 <script lang='ts'>
 import { Vue, Component } from "vue-property-decorator";
+// import { system } from "@/api";
+// const { getTianQi } = system;
 
 @Component
 export default class App extends Vue {
+  // axios 测试
+  private async created() {
+    // const data = await getTianQi()
+  }
+
   // 搜索框
   private searchMsg: string = "";
 
